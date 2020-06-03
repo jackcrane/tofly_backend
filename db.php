@@ -9,6 +9,6 @@ echo "airpt: ".$requested_airport . "\n";
 $json  = file_get_contents("db.json");
 $array = json_decode( $json, true );
 
-var_dump($array);
+var_dump($array[strtoupper($requested_airport)]);
 
 ?>
