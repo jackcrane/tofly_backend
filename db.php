@@ -2,6 +2,8 @@
 
 $requested_airport = $_GET["icao"];
 
+echo $requested_airport . "\n";
+
 $json  = '[{"var1":"9","var2":"16","var3":"16"},{"var1":"8","var2":"15","var3":"15"}]';
 $array = json_decode( $json, true );
 
